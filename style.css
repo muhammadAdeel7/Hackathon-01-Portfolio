@@ -29,7 +29,7 @@ header {
  * animation slide-top
  * ----------------------------------------
  */
- /* @-webkit-keyframes slide-top {
+ @-webkit-keyframes slide-top {
     0% {
       -webkit-transform: translateY(0);
               transform: translateY(0);
@@ -38,7 +38,7 @@ header {
       -webkit-transform: translateY(-100px);
               transform: translateY(-100px);
     }
-  } */
+  }
   @keyframes slide-top {
     25% {
       /* -webkit-transform: translateY(0); */
@@ -59,10 +59,7 @@ header {
                 transform: translateY(0);
       }
   }
-  
-  
-  
-  
+
 .animate-1{
     animation-name: slide-top;
     animation-duration: 5s;
@@ -84,7 +81,7 @@ header p {
 }
 
 .btn-header {
-    background-color: #007bff;
+    background-color: #000000;
     color: white;
     padding: 10px 20px;
     border-radius: 25px;
@@ -92,8 +89,10 @@ header p {
 }
 
 .btn-header:hover {
-    background-color: #0056b3;
+    background-color: #1a1919;
+    border-color: rgb(0, 0, 0);
 }
+
 
 /* Navbar */
 .navbar {
@@ -102,7 +101,7 @@ header p {
 }
 
 .navbar-brand {
-    font-weight: 600;
+    font-weight: 800;
     font-size: 1.5rem;
     color: #000;
 }
@@ -113,7 +112,7 @@ header p {
 }
 
 .nav-link:hover {
-    color: #007bff;
+    color: #464646;
 }
 
 /* About Section */
