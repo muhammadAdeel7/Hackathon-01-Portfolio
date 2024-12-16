@@ -4,6 +4,7 @@ body {
   overflow-x: hidden;
   background-color: #000000;
 }
+
 .playwrite-tz-guides-regular {
   font-family: "Playwrite TZ Guides", cursive;
   font-weight: 400;
@@ -658,4 +659,13 @@ a.text_white:hover {
 a.text_white:hover::after {
   width: 100%;
   transition: width 1s ease;
+}
+
+h2 {
+  transition: color .4s ease-in-out;
+  cursor: pointer;
+}
+
+h2:hover {
+  color: rgb(59, 59, 59);
 }
