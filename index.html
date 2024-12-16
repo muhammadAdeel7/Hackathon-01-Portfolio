@@ -247,3 +247,28 @@
 </body>
 
 </html>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const navbarToggler = document.querySelector('.navbar-toggler');
+        const navbarCollapse = document.querySelector('#navbarNav');
+
+        navbarToggler.addEventListener('click', function() {
+            if (!navbarCollapse.classList.contains('collapsing')) {
+                navbarCollapse.style.height = navbarCollapse.classList.contains('show')
+                    ? `${navbarCollapse.scrollHeight}px`
+                    : '0';
+                setTimeout(() => {
+                    navbarCollapse.style.height = navbarCollapse.classList.contains('show')
+                        ? '0'
+                        : `${navbarCollapse.scrollHeight}px`;
+                }, 10);
+
+                navbarCollapse.addEventListener('transitionend', () => {
+                    navbarCollapse.style.height = '';
+                }, { once: true });
+            }
+
+            navbarCollapse.classList.toggle('show');
+        });
+    });
+</script>
