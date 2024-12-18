@@ -661,11 +661,12 @@ a.text_white:hover::after {
   transition: width 1s ease;
 }
 
-h2 {
+/* h2 {
   transition: color .4s ease-in-out;
   cursor: pointer;
 }
 
 h2:hover {
   color: rgb(59, 59, 59);
-}
+} */
+
